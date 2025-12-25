@@ -4,10 +4,10 @@ Unnoficial experimental menu for GTA 5: Enhanced following original repository.
 
 ## How to use
 
-1. Download YimMenuV2 from [GitHub Releases](https://github.com/YimMenu/YimMenuV2/releases/tag/nightly)
-3. Download an injector, such as [Xenos](https://www.unknowncheats.me/forum/general-programming-and-reversing/124013-xenos-injector-v2-3-2-a.html)
-4. Open Rockstar Launcher, select Grand Theft Auto V Enhanced, go to settings, and disable BattlEye. If you are using Steam or Epic Games, you may have to pass the -nobattleye command line parameter as well
-5. Launch GTA V, then use your injector to inject YimMenuV2.dll at the main menu
+1. Download YimMenuV2 from [GitHub Releases](https://github.com/UTM-ORG/YimMenuV2/releases/tag/nightly).
+3. Download an injector, such as [Xenos](https://github.com/DarthTon/Xenos).
+4. Open Rockstar Launcher, select Grand Theft Auto V Enhanced, go to settings, and disable BattlEye. If you are using Steam or Epic Games, you may have to pass the -nobattleye command line parameter as well.
+5. Launch GTA V, then use your injector to inject YimMenuV2.dll at the main menu.
 
 ## How to open the menu?
 
