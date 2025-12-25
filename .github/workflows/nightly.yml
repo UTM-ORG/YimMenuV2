@@ -136,27 +136,38 @@ jobs:
           name: Nightly [${{ needs.build_nightly.outputs.short_sha }}]
           tag_name: nightly
           body: |
-            **This release has been built by Github Actions**
-            [Link to build](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            [**This release has been built by GitHub Actions**](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            Build SHA256: `${{ steps.build_sha.outputs.build_sha }}`
+            Full Commit Hash: `${{ needs.build_nightly.outputs.full_sha }}`
+            
+            # YimMenuV2
 
-            Build SHA256:
-            ```
-            ${{ steps.build_sha.outputs.build_sha }}
-            ```
-            To verify the build SHA256 during the action, click the build link, go-to "Create Release", open the Echo build sha256 step and read the sha256.
+            Unoficial experimental menu for GTA 5: Enhanced following original repository.
 
-            You can download the build artifacts, generate a SHA256 checksum and compare it with the below binary.
-            Build artifacts ARE NOT automatically the same as release assets since release assets can be modified afterwards.
+            ## How to use
 
+            1. Download YimMenuV2 from [GitHub Releases](https://github.com/UTM-ORG/YimMenuV2/releases/tag/nightly).
+            3. Download an injector, such as [Xenos](https://github.com/DarthTon/Xenos).
+            4. Open Rockstar Launcher, select Grand Theft Auto V Enhanced, go to settings, and disable BattlEye. If you are using Steam or Epic Games, you may have to pass the -nobattleye command line parameter as well.
+            5. Launch GTA V, then use your injector to inject YimMenuV2.dll at the main menu.
+
+            ## How to open the menu?
+
+            Press the `INSERT` key or `Ctrl+\` to open the menu
+            
+            ## Common issues
+
+            ### I keep getting desynced from public sessions every five minutes
+            We currently do not have a BattlEye bypass, and legitimate hosts will eventually remove you due to a heartbeat failure. There is currently no way to stop this other than using an actual (private) bypass.
+
+            ### I have a blackscreen or GFX_STATE_ERROR
+            We recommand you stop using DLSS or other Frame Generation settings.
+
+            ## Notice about Nightly builds
             These are nightly builds of YimMenuV2, they are provided for testing purposes only:
             - Test if your build environment produces a broken YimMenuV2.dll
             - Test if source code is out of date and no longer compatible with the current version of Grand Theft Auto V: Enhanced
 
             If you wish to use this menu as-is you are on your own, no warranty is provided.
-
-            Full Commit Hash:
-            ```
-            ${{ needs.build_nightly.outputs.full_sha }}
-            ```
           files: |
             YimMenuV2.dll

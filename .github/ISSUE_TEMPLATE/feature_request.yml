@@ -3,6 +3,13 @@ description: Suggest an idea for this project
 title: "[Request]: <Enter descriptive title here>"
 labels: request
 body:
+  - type: checkboxes
+    attributes:
+      label: "!!!READ THIS!!! Recovery features"
+      description: We're no longer accepting recovery feature requests due to spam. YimMenuV2 is a general-purpose GTA menu meant to enhance the user experience, not a get rich quick tool. Bug reports on existing recovery features are still allowed
+      options:
+        - label: I confirm that I'm not requesting a recovery feature
+          required: true
   - type: textarea
     attributes:
       label: Problem
@@ -39,11 +46,4 @@ body:
       description: You confirm that you've read existing open issues of YimMenuV2 and this isn't an existing feature request.
       options:
         - label: I confirm that issue isn't a duplicate.
-          required: true
-  - type: checkboxes
-    attributes:
-      label: "!!!READ THIS!!! Recovery features"
-      description: We're no longer accepting recovery feature requests due to spam. YimMenuV2 is a general-purpose GTA menu meant to enhance the user experience, not a get rich quick tool. Bug reports on existing recovery features are still allowed
-      options:
-        - label: I confirm that I'm not requesting a recovery feature
           required: true

@@ -1,6 +1,6 @@
 # YimMenuV2
 
-Unnoficial experimental menu for GTA 5: Enhanced following original repository.
+Unoficial experimental menu for GTA 5: Enhanced following original repository.
 
 ## How to use
 
